@@ -1,7 +1,7 @@
 # ESP8266 Temperature Logger (in development)
 A simple wireless temperature logger. Publishes data via GET requests.
 
-- [ESP8266 Temperature Logger](#esp8266-temperature-logger)
+- [ESP-12E Weather Station (in development)](#esp-12e-weather-station-in-development)
     - [Planned Features (And Progress)](#planned-features-and-progress)
     - [About](#about)
         - [Uploading Data](#uploading-data)
@@ -13,6 +13,7 @@ A simple wireless temperature logger. Publishes data via GET requests.
  - [X] Uploads
  - [X] Power Saving
  - [ ] Configuration
+ - [ ] OTA / WebUpdate / Configuration
 
 ## About
 Designed to be simple and easy to use. Will simply log temperature at the specified interval and send the values over to a IOT Server.
