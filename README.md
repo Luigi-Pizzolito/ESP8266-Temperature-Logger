@@ -1,7 +1,7 @@
 # ESP8266 Temperature Logger (in development)
 A simple wireless temperature logger. Publishes data via GET requests.
 
-- [ESP-12E Weather Station (in development)](#esp-12e-weather-station-in-development)
+- [ESP8266 Temperature Logger (in development)](#esp8266-temperature-logger-in-development)
     - [Planned Features (And Progress)](#planned-features-and-progress)
     - [About](#about)
         - [Uploading Data](#uploading-data)
@@ -12,8 +12,7 @@ A simple wireless temperature logger. Publishes data via GET requests.
 ## Planned Features (And Progress)
  - [X] Uploads
  - [X] Power Saving
- - [ ] Configuration
- - [ ] OTA / WebUpdate / Configuration
+ - [X] Configuration
 
 ## About
 Designed to be simple and easy to use. Will simply log temperature at the specified interval and send the values over to a IOT Server.
@@ -30,7 +29,7 @@ But there's a catch, for the RTC to reset and wake up the ESP it needs an extern
 By changing the interval between logs you can also improve the battery life. The longer the interval the longer it will last, but the fewer readings. You need to choose a interval large enough so that the power consumption is small, but small enough so that you can see any trends on the graph/data.
 
 ### Configuration
-Still working on this, currently everything is hardcoded. Don't know if I will keep it that way.
+GPIO_3 or the RX Pin when connected to GND during start up enters config. mode. Where an access point called "ESP_Logger" with the password "wifilogger" is created. By connecting to it and visiting 192.168.4.1 you can open the configuration page and edit all the settings for your logger. Additionally you can edit the file system on 192.168.4.1/edit
 
 
 ## Useful Links and References
