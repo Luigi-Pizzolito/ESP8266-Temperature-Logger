@@ -1,3 +1,4 @@
+Add pictures from instructable
 # ESP8266 Temperature Logger (in development)
 A simple wireless temperature logger. Publishes data via GET requests.
 
